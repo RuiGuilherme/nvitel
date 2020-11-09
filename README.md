@@ -27,10 +27,9 @@ now open Widget Menu and search for "Prime".
 
 #### Author
 ###### Rui Guilherme
-<ul>
-<li>[GitHub](https://github.com/RuiGuilherme/)</li>
-<li>[Linkedin](https://www.linkedin.com/in/rui-guilherme/)</li>
-</ul> 
+[GitHub](https://github.com/RuiGuilherme/)
+<br />
+[Linkedin](https://www.linkedin.com/in/rui-guilherme/)
 
 #### Contributing
 Contributions, issues and feature requests are welcome!
