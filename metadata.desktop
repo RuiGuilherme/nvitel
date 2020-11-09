@@ -1,0 +1,22 @@
+[Desktop Entry]
+Name=Prime Render Status/Switch
+Comment=Shows status of usage Nvidia graphical card.
+
+Icon=folder-games-symbolic
+Type=Service
+ServiceTypes=Plasma/Applet
+
+X-KDE-PluginInfo-Author=Rui Guilherme
+X-KDE-PluginInfo-Email=ruiguilherme@pm.me
+X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-Website=
+X-KDE-PluginInfo-Category=Utilities
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=MIT
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-Name=org.kde.plasma.nvitel
+
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/main.qml
+X-Plasma-Requires-FileDialog=Unused
+X-Plasma-Requires-LaunchApp=Unused
