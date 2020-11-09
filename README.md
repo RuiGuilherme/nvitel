@@ -20,6 +20,11 @@ $ rm -rf nvitel
 
 now open Widget Menu and search for "Prime".
 
+#### Screenshot
+![ToolTip Menu](https://i.imgur.com/8t9Fg7g.png)
+<br />
+![Select Menu](https://i.imgur.com/Pe9Wvb2.png)
+
 #### Author
 ###### Rui Guilherme
 <ul>
