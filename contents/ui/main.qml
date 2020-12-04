@@ -20,6 +20,10 @@ Item {
         executable.exec("~/.local/share/plasma/plasmoids/org.kde.plasma.nvitel/contents/ui/./switch.sh") 
     }
 
+    function getCurrentProcess() {
+        executable.exec("~/.local/share/plasma/plasmoids/org.kde.plasma.nvitel/contents/ui/./process.sh")
+    }
+
     PlasmaCore.DataSource {
         id: executable
         engine: "executable"
@@ -122,6 +126,10 @@ Item {
                     text: i18n("Switch video card")
                     onClicked: switchCard()
                 }
+                PlasmaComponents.ToolButton {
+                    text: i18n("Get processes are using nvidia-GPU")
+                    onClicked: getCurrentProcess()
+                }
             }
         }
     }
@@ -133,7 +141,7 @@ Item {
             //            anchors.topMargin: 3
             //            anchors.bottomMargin: 3
             source: root.icon
-            opacity: root.stat ? 1 : 0.7
+            opacity: root.stat ? 1 : 0.7            
             ColorOverlay {
                 anchors.fill: ima
                 source: ima
