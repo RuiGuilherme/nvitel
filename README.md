@@ -18,6 +18,7 @@ $ plasmapkg2 -i .
 $ cd ..
 $ rm -rf nvitel
 ```
+now open Widget Menu and search for "Prime".
 
 #### Update/Reinstall
 
@@ -33,9 +34,11 @@ $ rm -rf nvitel
 (optional)
 $ kquitapp5 plasmashell && kstart5 plasmashell
 ```
-
-
-now open Widget Menu and search for "Prime".
+#### Changelog
+1.0 - Initial Release
+1.1 - Minor Changes 
+1.2 - Get list process
+1.3 - Restart and Closed the process using GPU
 
 #### Known issue
 For some reason bash don't run script correctly, that a reason zsh is a prerequisite, in the future I will correct this problem.
@@ -45,7 +48,9 @@ For some reason bash don't run script correctly, that a reason zsh is a prerequi
 <br />
 ![Select Menu](https://i.imgur.com/Pe9Wvb2.png)
 <br />
-![Process Menu](https://i.imgur.com/paDrdGe.png)
+![Process Menu](https://i.imgur.com/cx9f80c.png)
+<br />
+![Close/Restart Menu](https://i.imgur.com/dSYDhKq.png)
 
 #### Author
 ###### Rui Guilherme
