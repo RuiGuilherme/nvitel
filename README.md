@@ -19,6 +19,22 @@ $ cd ..
 $ rm -rf nvitel
 ```
 
+#### Update/Reinstall
+
+```bash
+$ cd ~
+$ rm -rf .local/share/plasma/plasmoids/org.kde.plasma.nvitel
+$ git clone https://github.com/RuiGuilherme/nvitel.git
+$ cd nvitel
+$ plasmapkg2 -i .                         
+$ cd ..
+$ rm -rf nvitel
+
+(optional)
+$ kquitapp5 plasmashell && kstart5 plasmashell
+```
+
+
 now open Widget Menu and search for "Prime".
 
 #### Known issue
