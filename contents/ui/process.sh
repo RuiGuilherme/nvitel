@@ -19,8 +19,34 @@ finalResult=(`zenity --width=600 --height=400 \
 	--list \
 	--separator="$\n" \
 	--text="Running Processes:" \
+	--ok-label="Close/Restart Selected Process" \
+	--cancel-label="Ok" \
 	--column "PID" \
 	--column "Process" \
 	--column "Memory" \
 	"${finalResult[@]}"`)
-exit
+
+	if [ $finalResult -gt 0 ]; then 
+		Kill=1
+		Hup=2
+		SecondOption=(`zenity --width=600 --height=400 \
+		--list \
+		--separator="$\n" \
+		--text="Select one option. PID: $finalResult" \
+		--column "Exec" \
+		--column "Description" \
+		$Kill "Kill process (this can cause issue in the application)" \
+		$Hup "Reload process"`)
+		if [ "$SecondOption" = "$Kill" ]; then
+			kill -9 $finalResult
+			exit
+		elif [ "$SecondOption" = "$Hup" ]; then
+			kill -HUP $finalResult
+			exit
+		else
+			exit
+		fi
+	else 
+		exit
+	fi
+
