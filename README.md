@@ -36,8 +36,11 @@ $ kquitapp5 plasmashell && kstart5 plasmashell
 ```
 #### Changelog
 1.0 - Initial Release
+<br />
 1.1 - Minor Changes 
+<br />
 1.2 - Get list process
+<br />
 1.3 - Restart and Closed the process using GPU
 
 #### Known issue
