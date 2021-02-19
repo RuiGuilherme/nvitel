@@ -1,8 +1,9 @@
-#!/bin/zsh
+#!/bin/bash
 nvidiaReport="$(nvidia-smi -q --xml-format | grep -oP '(?<=<pid>).*(?=</pid>)|(?<=<process_name>).*(?=--type)|(?<=<process_name>).*(?=</process_name>)|(?<=<used_memory>).*(?=</used_memory>)')"
 count=1
 finalResult=()
-for i in $(echo $nvidiaReport | sed -e 's/ //g')
+# I hate my life...
+for i in $(echo "$nvidiaReport" | sed -e 's/ //g')
 do
 	case "$count" in
 		1) pid=$i ;;
