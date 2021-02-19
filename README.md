@@ -6,7 +6,6 @@ This is a very simple widget for KDE Plasma to get status Nvidia GPU, switch usi
 #### Prerequisites
 <ul>
 <li>optimus-manager:lasted</li>
-<li>zsh:lasted</li>
 </ul> 
 
 #### Usage/Install
@@ -42,9 +41,11 @@ $ kquitapp5 plasmashell && kstart5 plasmashell
 1.2 - Get list process
 <br />
 1.3 - Restart and Closed the process using GPU
+<br />
+1.3.1 - Fix compatibility on bash (zsh is not more a dependencies)
 
 #### Known issue
-For some reason bash don't run script correctly, that a reason zsh is a prerequisite, in the future I will correct this problem.
+you tell
 
 #### Screenshot
 ![ToolTip Menu](https://i.imgur.com/tLFrNMb.png)
