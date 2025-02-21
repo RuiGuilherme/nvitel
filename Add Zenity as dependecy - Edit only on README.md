@@ -5,7 +5,8 @@ This is a very simple widget for KDE Plasma to get status Nvidia GPU, switch usi
 
 #### Prerequisites
 <ul>
-<li>optimus-manager:lasted</li>
+<li>optimus-manager:lasted - https://github.com/Askannz/optimus-manager</li>
+<li>zenity:lasted - https://gitlab.gnome.org/GNOME/zenity</li>
 </ul> 
 
 #### Usage/Install
